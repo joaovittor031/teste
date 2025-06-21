@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação e Cultura Popular</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="menu-topo">
+        <div class="logo"><img src="img/logo1.png" alt="Logo Projeto Agrinho" class="logo-img"></div>
+        
+<div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+</div>
+
+    </div>
+    
+    
+<nav id="mainMenu" class="hamburger-menu-overlay">
+    <div class="menu-content">
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+
+        <div class="close-menu" onclick="toggleMenu()">✖</div>
+    
+        <a href="#introducao">Introdução</a>
+        <a href="#cultura">Cultura e Educação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#cidade">Cidade</a>
+        <a href="#arte">Arte</a>
+        <a>#Agrinho 2025</a>
+        
+    </nav>
+    <div class="acessibilidade-btn" onclick="toggleAcessPanel()">♿</div>
+    <div id="painelAcessibilidade" class="painel-acess">
+        <button onclick="document.body.classList.toggle('acessibilidade-fonte')">A+ Fonte</button>
+        <button onclick="document.body.classList.toggle('acessibilidade-contraste')">Contraste</button>
+    </div>
+    
+    </nav>
+</header>
+
+<section id="introducao" class="section">
+    <img src="img/1.jpg" class="banner-img" alt="Educação">
+    <h2 class="section-title">Educação que Valoriza a Cultura</h2>
+    <p class="section-text">
+        A Educação e a Cultura Popular caminham juntas na formação de cidadãos conscientes. Ao valorizar tradições, saberes locais e expressões populares,
+        a escola aproxima o aprendizado da realidade dos estudantes.
+    </p>
+</section>
+
+<section id="cultura" class="section">
+    <img src="img/2.jpg" class="banner-img" alt="Cultura Popular">
+    <h2 class="section-title">Cultura Popular na Educação</h2>
+    <p class="section-text">
+        A cultura popular, presente em danças, histórias, brincadeiras e saberes do dia a dia, enriquece o ensino.
+        Ao trazer esses elementos para a sala de aula, promovemos uma educação mais inclusiva, viva e significativa.
+    </p>
+</section>
+
+<section id="projetos" class="section">
+    <img src="img/3.jpg" class="banner-img" alt="Projetos Culturais">
+    <h2 class="section-title">Projetos Culturais</h2>
+    <p class="section-text">
+        Em Cafelândia, projetos como feiras culturais, oficinas de arte, contação de histórias e brincadeiras antigas fortalecem os laços entre escola e comunidade,
+        despertando nos alunos orgulho e respeito pelas raízes locais.
+    </p>
+</section>
+
+<section id="comunidade" class="section">
+    <img src="img/4.jpg" class="banner-img" alt="Comunidade">
+    <h2 class="section-title">Fortalecendo as Comunidades</h2>
+    <p class="section-text">
+        Ao reconhecer os saberes do povo, a educação dá voz às comunidades. Pais, avós e líderes locais passam a ser parte ativa do processo educativo,
+        criando uma rede de aprendizagem colaborativa e afetiva.
+    </p>
+</section>
+
+<section id="cidade" class="section">
+    <img src="img/5.jpg" class="banner-img" alt="Cidade">
+    <h2 class="section-title">Cidade com Cultura Viva</h2>
+    <p class="section-text">
+        Quando a cultura popular é valorizada, a cidade cresce junto. Cafelândia se fortalece ao integrar escolas, projetos sociais e manifestações artísticas,
+        promovendo inclusão, turismo cultural e identidade local.
+    </p>
+</section>
+
+<section id="arte" class="section">
+    <img src="img/6.jpg" class="banner-img" alt="Arte e Cultura">
+    <h2 class="section-title">Arte e Expressão Cultural</h2>
+    <p class="section-text">
+        A arte é reflexo da cultura de um povo. Promover atividades como teatro, dança, pintura e música nas escolas
+        é incentivar a criatividade, o respeito à diversidade e a valorização das histórias de vida.
+    </p>
+</section>
+
+<footer>
+    Projeto Agrinho<br>© Todos os Direitos Reservados
+</footer>
+
+
+
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mainMenu");
+    menu.classList.toggle("show");
+}
+
+// Fecha Menu H 
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("#mainMenu a");
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            document.getElementById("mainMenu").classList.remove("show");
+        });
+    });
+});
+</script>
+
+</body>
+
+</html>
+
+</html>
